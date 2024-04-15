@@ -17,15 +17,18 @@
 |           |                                           | Docker Container Architecture                          |
 |     3     | **Install and Configure Docker**          | Setting-up Docker on Linux                             |
 |           |                                           | Setting-up Docker on Windows                           |
-|     4     | **Docker CLI**                            | Kubernete objects and workloads                        |
-|           |                                           | Deploying and managing applications                    |
+|     4     | **Docker CLI**                            | Introducing Docker client and Config file                        |
+|           |                                           |               |
 |     5     | **Mastering Containers**                  | Container Lifecycle                                    |
 |           |                                           | Starting, Stopping and Removing containers             |
 |           |                                           | Inspecting Containers                                  |
 |           |                                           | Exec into a running container                          |
 |           |                                           | Retrieving container logs                              |
 |     6     | **Docker Images & Registry**              | Docker Images & Registry                               |
+||||
 |     7     | **Managing storage with Data Volumes**    | Managing storage with Data Volumes                     |
+||||
 |     8     | **Docker Networking**                     | Docker Networking                                      |
+||||
 |     9     | **Docker Compose**                        | Docker Compose                                         |
 |           |                                           |                                                        |
