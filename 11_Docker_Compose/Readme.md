@@ -53,8 +53,8 @@
 ### Step-00: Install and Configure `Docker Compose`
 
 - For more details, refer https://docs.docker.com/compose/install/
-- Here, I'm installing docker-compose using standalone method:
 
+#### Compose V1 Installation (earlier)
 ```
 # Download the docker compose binary
 sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) \
@@ -69,8 +69,24 @@ chmod +x /usr/bin/docker-compose
 # Check the docker compose version
 docker-compose --version
 ```
-
 :warning: **Note** that Compose standalone uses the **-compose** syntax instead of the current standard syntax **compose**.
+
+#### Compose V2 Installation (latest)
+
+```
+# Download and Install the Compose CLI plugin
+DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+mkdir -p $DOCKER_CONFIG/cli-plugins
+curl -SL https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+
+# Apply executable permissions to the binary
+sudo chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+or
+sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+
+# Check Docker Compose (v2) version
+docker compose version
+```
 
 ### Step-01: Create and analyze a docker-compose.yml file
 
