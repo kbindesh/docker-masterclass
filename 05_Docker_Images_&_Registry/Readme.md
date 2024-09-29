@@ -1,4 +1,4 @@
-# Creating and Managing Docker Containers
+# Creating and Managing Docker Container Images
 
 ## What are Docker Images?
 
