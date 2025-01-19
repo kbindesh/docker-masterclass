@@ -85,7 +85,7 @@ or
 sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 
 # Check Docker Compose (v2) version
-docker compose version
+docker compose --version
 ```
 
 ### Step-01: Create and analyze a docker-compose.yml file
